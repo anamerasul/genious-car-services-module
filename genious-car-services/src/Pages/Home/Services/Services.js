@@ -31,18 +31,23 @@ const Services = () => {
     const [services] = UseRepairdataHooks([])
     console.log(services);
     return (
-        <div>
-            <h2>Service ({services.length})</h2>
+        <div className="container mx-auto px-12">
+            <h2 className="text-center text-5xl mb-6">Service ({services.length})</h2>
             {/* <img src={repair1} alt="" srcset="" /> */}
 
-            {
 
-                services.map(service => <Service
-                    key={service.id}
-                    service={service}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {
 
-                ></Service>)
-            }
+                    services.map(service => <Service
+                        key={service.id}
+                        service={service}
+
+                    ></Service>)
+                }
+
+            </div>
+
         </div>
     );
 };
