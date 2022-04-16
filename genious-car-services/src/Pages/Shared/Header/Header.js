@@ -4,6 +4,8 @@ import { MdLegendToggle } from 'react-icons/md';
 import './Header.css'
 import './Header.css'
 import CustomLink from '../../../Components/CustomLink/CustomLink';
+
+import logo from './../../../Images/logo.png'
 const Header = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
     return (
@@ -15,7 +17,8 @@ const Header = () => {
                             <Link to='/'
                                 className="text-xl md:text-4xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-fuchsia-300 md:text-yellow-600 "
                             >
-                                Geneous-car
+
+                                <img className="h-12" src={logo} alt="logo" />
                             </Link>
                             <button
                                 className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block md:hidden outline-none focus:outline-none"
