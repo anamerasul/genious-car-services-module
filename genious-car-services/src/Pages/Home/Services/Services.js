@@ -32,7 +32,7 @@ const Services = () => {
     console.log(services);
     return (
         <div className="container mx-auto px-12">
-            <h2 className="text-center text-5xl mb-6">Service ({services.length})</h2>
+            <h2 className="text-center text-5xl mb-6 text-purple-600">Service ({services.length})</h2>
             {/* <img src={repair1} alt="" srcset="" /> */}
 
 

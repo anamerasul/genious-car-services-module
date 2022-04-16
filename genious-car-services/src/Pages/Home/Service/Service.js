@@ -11,7 +11,7 @@ const Service = ({ service }) => {
 
             <p className="text-center text-xl my-2">price :{price}</p>
 
-            <button className="text-center ml-28 rounded-full px-12 py-4 my-4 bg-blue-600"> Book {name}</button>
+            <button className="text-center md:ml-4 lg:ml-28 rounded-full px-1 md:px-8 lg:px-12 py-4 my-4 bg-blue-600"> Book {name}</button>
         </div>
     );
 };
